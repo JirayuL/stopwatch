@@ -16,7 +16,7 @@ public class Stopwatch {
 	private long stoptTime;
 
 	/**
-	 * Constructor for Stopwatch
+	 * Constructor for Stopwatch set startTime and stopTime to zero.
 	 */
 	public Stopwatch() {
 		this.startTime = 0;
@@ -38,7 +38,9 @@ public class Stopwatch {
 	}
 
 	/**
-	 * To check whether the Stopwatch is running or stopped and return the result.
+	 * To check whether the Stopwatch is running or stopped and return the
+	 * result.
+	 * 
 	 * @return Is Stopwatch running or stopped?
 	 */
 	public boolean isRunning() {
@@ -48,21 +50,21 @@ public class Stopwatch {
 			return false;
 		}
 	}
-	
+
 	/**
 	 * To get the time when the Stopwatch start.
 	 */
 	public void start() {
 		this.startTime = System.nanoTime();
 	}
-	
+
 	/**
 	 * To get the time when the Stopwatch stop.
 	 */
 	public void stop() {
 		this.stoptTime = System.nanoTime();
 	}
-	
+
 	/**
 	 * Do something like work or study.
 	 */
@@ -72,6 +74,7 @@ public class Stopwatch {
 
 	/**
 	 * Main method to test the Stopwatch object.
+	 * 
 	 * @param args
 	 */
 	public static void main(String[] args) {
