@@ -15,7 +15,7 @@ public class AppendToString implements Runnable {
 	 * Constructor for AppendToString and set count equal to user's count.
 	 * 
 	 * @param recive
-	 *            count from the user's input
+	 *            count from the user's input.
 	 */
 	public AppendToString(int count) {
 		this.count = count;
@@ -34,7 +34,7 @@ public class AppendToString implements Runnable {
 	}
 
 	/**
-	 * Return how many chars append to String.
+	 * Return how many chars append to String and final String length.
 	 */
 	@Override
 	public String toString() {

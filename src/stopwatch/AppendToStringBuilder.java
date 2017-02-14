@@ -16,7 +16,7 @@ public class AppendToStringBuilder implements Runnable {
 	 * count.
 	 * 
 	 * @param recive
-	 *            count from the user's input
+	 *            count from the user's input.
 	 */
 	public AppendToStringBuilder(int count) {
 		this.count = count;
@@ -37,7 +37,7 @@ public class AppendToStringBuilder implements Runnable {
 	}
 
 	/**
-	 * Return how many chars append to StringBuilder.
+	 * Return how many chars append to StringBuilder and final String length.
 	 */
 	@Override
 	public String toString() {

@@ -55,6 +55,9 @@ public class Stopwatch {
 	 * To get the time when the Stopwatch start.
 	 */
 	public void start() {
+		if(isRunning()){
+			return;
+		}
 		this.startTime = System.nanoTime();
 	}
 
@@ -62,7 +65,9 @@ public class Stopwatch {
 	 * To get the time when the Stopwatch stop.
 	 */
 	public void stop() {
-		this.stoptTime = System.nanoTime();
+		if(isRunning())
+			this.stoptTime = System.nanoTime();
+		return;
 	}
 
 	/**
