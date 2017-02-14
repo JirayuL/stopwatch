@@ -30,7 +30,7 @@ public class Stopwatch {
 	 * @return time of Stopwatch when the user call this method.
 	 */
 	public double getElapsed() {
-		if (this.startTime > this.stoptTime) {
+		if (isRunning()) {
 			return (System.nanoTime() - this.startTime) * NANOSECONDS;
 		} else {
 			return (this.stoptTime - this.startTime) * NANOSECONDS;
