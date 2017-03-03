@@ -2,7 +2,6 @@ package stopwatch;
 
 import java.io.IOException;
 import java.math.BigDecimal;
-import java.util.Scanner;
 
 /**
  * Task file for Stopwatch.
